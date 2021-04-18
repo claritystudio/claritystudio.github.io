@@ -13,6 +13,16 @@
   <title>Clarity Studio research group</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Economica">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- Script for the cookie banner-->
+  if(localStorage.getItem('cookieSeen') != 'shown'){
+  $(".cookie-banner").delay(2000).fadeIn();
+  localStorage.setItem('cookieSeen','shown')
+  }
+
+  $('.close').click(function(e) {
+  $('.cookie-banner').fadeOut();
+  });
+
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-8D2H449LVM"></script>
   <script>
@@ -44,13 +54,13 @@
     <small>Clarity Studio is a research unit at <a href="https://www.unige.it"><i>Università di
           Genova</i></a></small>
   </p>
- 
+
   <div class=’cookie-banner’ style=’display: none’>
     <p class="quiet">
       <small>
-      By using our website, you agree to our
-      <a href=’./privacy.html’>cookie policy</a>
-    </small>
+        By using our website, you agree to our
+        <a href=’./privacy.html’>cookie policy</a>
+      </small>
     </p>
     <button class=’close’>&times;</button>
   </div>
