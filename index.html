@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Economica">
   <link rel="stylesheet" type="text/css" href="style.css">
   <!-- Script for the cookie banner-->
-  if(localStorage.getItem('cookieSeen') != 'shown'){
+  <script>if(localStorage.getItem('cookieSeen') != 'shown'){
   $(".cookie-banner").delay(2000).fadeIn();
   localStorage.setItem('cookieSeen','shown')
   }
@@ -22,7 +22,7 @@
   $('.close').click(function(e) {
   $('.cookie-banner').fadeOut();
   });
-
+</script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-8D2H449LVM"></script>
   <script>
