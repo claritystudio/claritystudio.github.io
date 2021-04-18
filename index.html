@@ -13,16 +13,9 @@
   <title>Clarity Studio research group</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Economica">
   <link rel="stylesheet" type="text/css" href="style.css">
-  <!-- Script for the cookie banner-->
-  <script>if(localStorage.getItem('cookieSeen') != 'shown'){
-  $(".cookie-banner").delay(2000).fadeIn();
-  localStorage.setItem('cookieSeen','shown')
-  }
-
-  $('.close').click(function(e) {
-  $('.cookie-banner').fadeOut();
-  });
-</script>
+  <!--JQuery-->
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-8D2H449LVM"></script>
   <script>
@@ -64,6 +57,18 @@
     </p>
     <button class=’close’>&times;</button>
   </div>
+
+
+  <!-- Script for the cookie banner-->
+  <script>if (localStorage.getItem('cookieSeen') != 'shown') {
+      $(".cookie-banner").delay(2000).fadeIn();
+      localStorage.setItem('cookieSeen', 'shown')
+    }
+
+    $('.close').click(function (e) {
+      $('.cookie-banner').fadeOut();
+    });
+  </script>
 </body>
 
 </html>
