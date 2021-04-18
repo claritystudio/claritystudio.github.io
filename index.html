@@ -48,20 +48,18 @@
           Genova</i></a></small>
   </p>
 
-  <div class=’cookie-banner’ style=’display: none’>
-    <p class="quiet">
+  <div class='cookie-banner' style='display: none'>
       <small>
         By using our website, you agree to our
-        <a href=’./privacy.html’>cookie policy</a>
+        <a href='./privacy.html'>cookie policy</a>
       </small>
-    </p>
-    <button class=’close’>&times;</button>
+      <button class='close'>&times;</button>
   </div>
 
 
   <!-- Script for the cookie banner-->
   <script>if (localStorage.getItem('cookieSeen') != 'shown') {
-      $(".cookie-banner").delay(2000).fadeIn();
+      $('.cookie-banner').delay(2000).fadeIn();
       localStorage.setItem('cookieSeen', 'shown')
     }
 
