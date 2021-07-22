@@ -10,3 +10,27 @@ ul.bullet, ul.bullet li{
 
 }
 
+
+.container .wrap-top {
+    display: table-cell;
+    text-align: center;
+    vertical-align: top;
+    overflow: hidden;
+  }
+  .container .wrap-top:not(.noSpaces), .container .wrap.spaceWrap,
+  .container .wrap-top .spaceWrap {
+    padding: 120px calc(8% + 15px);
+  }
+  .container .wrap-top .overflowHidden {
+    overflow: hidden;
+  }
+  .container .wrap-top * {
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+  }
+  
+
+
+   
