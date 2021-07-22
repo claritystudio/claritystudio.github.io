@@ -1,6 +1,7 @@
 ul.bullet, ul.bullet li{
     list-style: disc;
     margin-left: 20px;
+   
 }
 
 .button.mini {
@@ -8,3 +9,4 @@ ul.bullet, ul.bullet li{
     max-width: 75%;
 
 }
+
