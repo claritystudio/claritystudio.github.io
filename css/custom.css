@@ -13,48 +13,9 @@ ul.bullet li a{
   color: #3F51B5;
 }
 
-
-/*  */
-
-
-.bars {
-  font-size: 0;
-}
-
-.bar {
-  padding: 6px;
-  display: inline-block;
-}
-
-.bar:after {
-  content: "";
-  display: inline-block;
-  width: 20px;
-  height: 2px;
-  background: #fff;
-  border-radius: 10%;
-  opacity: 0.4;
-  transition: 0.25s;
-}
-
-.bar.big .bar:after {
-  width: 18px;
-  height: 3px;
-}
-
-.slide.whiteSlide .bar:after {
-  background: #202020;
-}
-
-.slides:not(.mobile).bar:hover:after {
-  transform: scale(1.333333);
-  opacity: 0.6;
-}
-
-.bar:active:after,
-.bar.selected:after {
-  opacity: 0.6;
-  transform: scale(1.33333);
+ul.small, .ul.small {
+  font-size: 16px;
+  letter-spacing: -0.011em;
 }
 
 /* resize button */
@@ -83,5 +44,13 @@ ul.bullet li a{
     -ms-user-select: text;
     user-select: text;
   }
-  
 
+    
+  /* schedine temi di ricerca tutte della stessa altezza della più grande */
+  .slider.clickable.animated.margin-bottom-2.ae-1.fadeIn.swiper-98.box-77.pad.done.animateOnEvent {
+    min-height: 50vh;
+  }
+
+  .inline {
+    display: block;
+  }
