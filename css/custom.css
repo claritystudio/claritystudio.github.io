@@ -1,16 +1,68 @@
-ul.bullet, ul.bullet li{
-    list-style: disc;
+/* Stili di lista */
+ul.bullet{
+  margin-bottom: 20px;
+} 
+
+ul.bullet li{
+    list-style: " - ";
     margin-left: 20px;
-   
 }
 
+ul.bullet li a{
+  font-weight: 600;
+  color: #3F51B5;
+}
+
+
+/*  */
+
+
+.bars {
+  font-size: 0;
+}
+
+.bar {
+  padding: 6px;
+  display: inline-block;
+}
+
+.bar:after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 2px;
+  background: #fff;
+  border-radius: 10%;
+  opacity: 0.4;
+  transition: 0.25s;
+}
+
+.bar.big .bar:after {
+  width: 18px;
+  height: 3px;
+}
+
+.slide.whiteSlide .bar:after {
+  background: #202020;
+}
+
+.slides:not(.mobile).bar:hover:after {
+  transform: scale(1.333333);
+  opacity: 0.6;
+}
+
+.bar:active:after,
+.bar.selected:after {
+  opacity: 0.6;
+  transform: scale(1.33333);
+}
+
+/* resize button */
 .button.mini {
-
     max-width: 75%;
-
 }
 
-
+/* testo allineato in alto rispetto al container */
 .container .wrap-top {
     display: table-cell;
     text-align: center;
@@ -24,6 +76,7 @@ ul.bullet, ul.bullet li{
   .container .wrap-top .overflowHidden {
     overflow: hidden;
   }
+
   .container .wrap-top * {
     -webkit-user-select: text;
     -moz-user-select: text;
@@ -32,5 +85,3 @@ ul.bullet, ul.bullet li{
   }
   
 
-
-   
